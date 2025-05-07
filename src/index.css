@@ -115,4 +115,35 @@
   .controls-button {
     @apply p-2 rounded-full hover:bg-black/10 dark:hover:bg-white/10 transition-colors;
   }
+
+  /* Library styles */
+  .book-card {
+    @apply bg-paper border border-border rounded-lg shadow-sm overflow-hidden transition-all duration-200;
+  }
+
+  .book-card:hover {
+    @apply shadow-md transform -translate-y-1;
+  }
+
+  /* Form styles */
+  .form-container {
+    @apply bg-paper border border-border rounded-lg p-6 shadow-sm;
+  }
+
+  /* Animations for page transitions */
+  .page-enter {
+    @apply opacity-0;
+  }
+  
+  .page-enter-active {
+    @apply opacity-100 transition-opacity duration-300;
+  }
+  
+  .page-exit {
+    @apply opacity-100;
+  }
+  
+  .page-exit-active {
+    @apply opacity-0 transition-opacity duration-300;
+  }
 }
